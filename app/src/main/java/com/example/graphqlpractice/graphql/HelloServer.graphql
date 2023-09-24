@@ -1,0 +1,12 @@
+query HelloServer {
+    hello {
+        ... on Error {
+            code
+            message
+        }
+
+        ... on Success {
+            payload
+        }
+    }
+}
